@@ -1,0 +1,43 @@
+0. git 설치
+
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+이건 한번만하면된다.
+
+1. 저장소만들기 
+
+- local 저장소 
+git init . 하면 workspace 에 .git 숨김폴더가 생긴다.
+
+- git hub 저장소
+workspace git hub홈페이지가서 저장소를만들어준다.
+
+git remote add heath https://github.com/kindonghun/kimdonghun.git
+
+git remote 하면 heath별명이생긴다.(확인)
+
+
+2.레파지토리 저장 (집에서작업하고 저장할떄 해야하는것)
+- local 레파지토리에 저장
+git add --all (시간걸릴수있음)(후보목록에올림)
+
+git status (후보목록에올린걸확인) 필수조건아님
+
+git commit -m "1
+
+-git hub 저장
+git push heath master
+
+username
+password  적으면 다운로드시작한다.
+
+3.레파지토리 다운로드
+git hub에서 local 레파지토리로 다운
+
+git pull heath(별명)
+
+
+local레파지토리에서 워킹디렉토리로 복사
+git checkout master 
+
+
