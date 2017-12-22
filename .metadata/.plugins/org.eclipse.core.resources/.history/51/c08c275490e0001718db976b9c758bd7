@@ -1,0 +1,36 @@
+package day04;
+
+import java.util.Scanner;
+
+public class test2 {
+	public static void main(String[] args) {
+			
+		//가위바위보 게임만들어보기
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("가위바위보게임을시작하시겠습니까?");
+		System.out.println(" YES ");
+		System.out.println(" NO ");
+		int a = sc.nextInt();
+		
+		System.out.println("가위바위보 선택을시작합니다 ");
+		System.out.println("시작 N버튼을눌러주세요.");
+		String n = sc.next();
+		
+		switch(n) {
+		case "가위":
+		System.out.print("첫번째로 낼 가위바위보 중 선택 :");
+		String b = sc.next();
+		case "바위":
+		System.out.print("두번째로 낼 가위바위보 중 선택 :");
+		String c = sc.next();
+		case "보":
+		System.out.print("세번째로 낼 가위바위보 중 선택 :");
+		String d = sc.next();
+		
+		}
+	
+		
+		
+	}
+}

@@ -1,0 +1,152 @@
+package day06;
+
+
+import java.util.*;
+
+public class test4 {
+
+	public static String add(int n1) { //입력받은수가 홀수인지짝수인지반환하는메서드
+		if (n1 % 2 == 0) {
+			return "짝수";
+		} else {
+			return "홀수";
+		}
+	}
+	public static int aaa(int a) {//수를입력받아 1부터 입력받은수까지 홀수의합을반환하는메서드
+
+		int sum=0;
+		
+		for(int i=0; i<=a; i++) {
+			if(i%2==1)
+				sum += i;
+		} return sum;
+		
+	}
+	public static char bbb(char ch) {//문자를입력받아 대문자 <->소문자로 변환하는메서드
+		int ch2;
+		if ( (int)ch >= 65 && (int)ch <= 90) {
+			ch2 = (int)ch + 32;
+		} else {
+			ch2 = (int)ch - 32; 
+		}
+		return (char)ch2;
+	}
+	public static int ccc(int a,int b) {//정수두개를입력받아 더한값을 반환하는메서드
+
+		double sum;
+		sum=a+b;
+		
+		return a+b;
+		
+	}
+	public static double ddd(double a,double b) {//실수와 두개를입력받아 더한값을 반환하는메서드
+		double sum;
+		sum=a+b;
+		return a+b;
+	}
+	public static double fff(int a,double b) {//정수와실수 두개를입력받아 더한값을 반환하는메서드
+		double sum;
+		sum=a+b;
+		return a+b;
+	}
+	public static double fff(double a,int b) {//실수와정수 두개를입력받아 더한값을 반환하는메서드
+		double sum;
+		sum=a+b;
+		return a+b;
+	}
+	public static int a(int a ,int b) {//사칙연산기능을 하나씩나누어서 메서드로 정의
+		int sum;
+		sum=a+b;
+		return a+b;
+	}
+	public static int b(int a ,int b) {//사칙연산기능을 하나씩나누어서 메서드로 정의
+		int sum;
+		sum=a-b;
+		return a-b;
+	}
+	public static int c(int a ,int b) {//사칙연산기능을 하나씩나누어서 메서드로 정의
+		int sum;
+		sum=a*b;
+		return a*b;
+	}
+	public static int d(int a ,int b) {//사칙연산기능을 하나씩나누어서 메서드로 정의
+		int sum;
+		sum=a/b;
+		return a/b;
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a ;
+		int b ;
+		System.out.println("Q.짝수,홀수구하기");
+		System.out.println("숫자를입력하세요:");
+		a= sc.nextInt();
+		System.out.println(a+"는"+add(a)+"");
+		System.out.println();
+		
+		System.out.println("Q.홀수값구하기");
+		System.out.println("숫자입력:");
+		a = sc.nextInt();
+		System.out.println("홀수의값은"+aaa(a)+"입니다");
+		System.out.println();
+		
+		System.out.println("Q.대문자<->소문자");
+		System.out.println("문자를입력하세요:");
+		String str =sc.next();
+		System.out.println("대문자<->소문자:"+bbb(str.charAt(0))+"입니다");
+		System.out.println();
+		
+		System.out.println("Q.두개의 정수를입력받아 합친값을구하세요");
+		System.out.println("첫번째정수:");
+		a= sc.nextInt();
+		System.out.println("두번째정수:");
+		b= sc.nextInt();
+		System.out.println(a+"와"+b+"의합은"+ccc(a,b));
+		System.out.println();
+		
+		System.out.println("Q.두숫자의 실수를입력받아 합친값을구하세요");
+		System.out.println("첫번째정수:");
+		double c= sc.nextDouble();
+		System.out.println("두번째정수:");
+		double d=sc.nextDouble();
+		System.out.println(c+"와"+d+"의합은"+ddd(c,d));
+		System.out.println();
+		
+		System.out.println("Q.정수와 실수를입력받아 합친값을구하세요");
+		System.out.println("첫번째정수:");
+		int a1= sc.nextInt();
+		System.out.println("두번째실수:");
+		double a2=sc.nextDouble();
+		System.out.println(a1+"와"+a2+"의합은"+ddd(a1,a2));
+		System.out.println();
+		
+		System.out.println("Q.정수와 실수를입력받아 합친값을구하세요");
+		System.out.println("첫번째실수:");
+		double b2=sc.nextDouble();
+		System.out.println("두번째정수:");
+		int b1= sc.nextInt();
+		System.out.println(b2+"와"+b1+"의합은"+ddd(b2,b1));
+		
+		System.out.println("Q.사칙연산 기능을하나씩나누어서 메서드로정의");
+		System.out.println("===계산기를시작합니다==");
+		System.out.println("첫번째숫자를입력하세요:");
+		int a3 =sc.nextInt();
+		System.out.println("두번째숫자를입력하세요:");
+		int a4 =sc.nextInt();
+		System.out.println("사칙연산을 선택하세요(+,-,*,/)");
+		char a5 = sc.next().charAt(0);
+		
+		switch(a5) {
+		
+		case '+':
+			System.out.println(a3+"+"+a4+"="+a(a+b)+"입니다"); break;
+		case '-':
+			System.out.println(a3+"-"+a4+"="+b(a-b)+"입니다"); break;
+		case '*':
+			System.out.println(a3+"*"+a4+"="+c(a3*a4)+"입니다"); break;
+		case '/':
+			System.out.println(a3+"/"+a4+"="+c(a3/a4)+"입니다"); break;
+		}
+	}
+
+}

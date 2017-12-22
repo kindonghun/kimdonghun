@@ -1,0 +1,28 @@
+package day05;
+
+
+
+
+import java.util.Scanner;
+
+public class test6 {
+	public static void main(String[] args)  {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("첫번째값:");
+		int n1 = sc.nextInt();
+		System.out.println("두번째값:");
+		int n2 = sc.nextInt();
+
+		int sum=0;
+		
+		if(n1>=n2) {
+			int tmp=n1;
+			n1= n2;
+			n2 =tmp;
+		}
+		for(int a=n1; a<=n2; a++)
+			sum+=a;
+
+		System.out.println("두수 사이의합은:"+sum);
+	}
+}

@@ -1,0 +1,21 @@
+package day04;
+
+import java.util.Scanner;
+
+public class q1 {
+	public static void main(String[] args) {
+
+		Scanner sc= new Scanner(System.in);
+		
+		
+		if(30==3000) {
+		System.out.println("말을탄시간:");
+		int a = sc.nextInt();
+		}
+		System.out.println("전체계산금액:");
+		int b = sc.nextInt();
+		
+		
+			
+	}
+}

@@ -1,0 +1,24 @@
+package day07;
+
+import java.util.Random;
+
+public class test3 {
+public static void main(String[] args) {
+	Random ran = new Random();
+	int lo1 =ran.nextInt(45)+1;
+	int lo2 =ran.nextInt(45)+1;
+	int lo3 =ran.nextInt(45)+1;
+	int lo4 =ran.nextInt(45)+1;
+	int lo5 =ran.nextInt(45)+1;
+	int lo6 =ran.nextInt(45)+1;
+	
+	System.out.println(lo1);
+	System.out.println(lo2);
+	System.out.println(lo3);
+	System.out.println(lo4);
+	System.out.println(lo5);
+	System.out.println(lo6);
+	
+	
+}
+}

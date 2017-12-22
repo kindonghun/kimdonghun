@@ -1,0 +1,25 @@
+package day03;
+
+import java.util.Scanner;
+
+public class test7 {
+	public static void main(String[] agrs) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("세수를 입력받아 큰순서대로 출력하시오.");
+		
+		int a =sc.nextInt();
+		int b =sc.nextInt();
+		int c =sc.nextInt();
+		
+		if(a > b) {
+			System.out.println(a);
+		}
+		else if (b > c) {
+			System.out.println(b);
+		}else
+			System.out.println(c);
+		System.out.println("큰순서"+a+b+c);
+	}
+		
+}

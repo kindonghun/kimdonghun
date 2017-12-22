@@ -1,0 +1,48 @@
+package day04;
+
+import java.util.Scanner;
+
+public class test3 {
+	public static void main(String[] args) {
+		int kor=0,mat=0,eng=0;
+		
+		
+		
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("****학생관리프로그램****");
+		System.out.println();
+		System.out.println("학생관리프로그램을시작하시겠습니까?");
+		System.out.println("1. YES");
+		System.out.println("2. NO");
+		
+		int a = sc.nextInt();
+		
+		switch(a) {
+		
+		case 1:
+			System.out.println("학생등록:");
+			String name = sc.next();
+		case 2:
+			System.out.println("국어점수입력:");
+			kor = sc.nextInt();
+			System.out.println("수학점수입력:");
+			mat = sc.nextInt();
+			System.out.println("영어점수입력:");
+			eng = sc.nextInt();
+		case 3:
+			System.out.printf("총점: %d\n",kor+eng+mat);
+		case 4:
+			System.out.printf("평균: %f\n ",(kor+eng+mat)/3.f);
+			
+		
+	
+			
+			
+		
+			
+			
+		}
+		
+}
+}

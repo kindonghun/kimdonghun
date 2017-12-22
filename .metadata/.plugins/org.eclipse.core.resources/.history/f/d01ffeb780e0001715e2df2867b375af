@@ -1,0 +1,30 @@
+package day04;
+
+import java.util.Scanner;
+
+public class tttt {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int a = 30; //기본이용시간
+		int b = 3000; //기본이용요금
+		int c = 10; //분당
+		int d = 500; //추가요금
+		int f ; //이용시간
+		int g ; //전체금액
+		
+		System.out.println("이용시간:");
+		f = sc.nextInt();
+		
+		if(f > a) {
+			d = b;
+			
+		}else {
+			int tmp=(f- a);
+			tmp = tmp/c;
+			g = b+(d*tmp);
+		}
+		System.out.println("이용요금은"+g+"원입니다");
+		
+	}
+}

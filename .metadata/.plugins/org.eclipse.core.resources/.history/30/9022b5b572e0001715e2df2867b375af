@@ -1,0 +1,39 @@
+package day04;
+
+import java.util.Scanner;
+
+public class q4 {
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("첫번째과목점수:");
+		int a = sc.nextInt();
+		System.out.println("두번째과목점수:");
+		int b = sc.nextInt();
+		System.out.println("세번째과목점수:");
+		int c = sc.nextInt();
+		
+		int sum =(a+b+c);
+		double avg =(double)sum/3;
+		
+		if(90<=100){
+			System.out.println("A");
+			char rank ='A';
+		}
+		else if(80 <=89) {
+			System.out.println("B");
+			char rank1 ='B';
+		}
+		else if(70 <= 79) {
+			System.out.println("C");
+			char rank2 ='C';
+		}
+		else if(60 <= 69) {
+			System.out.println("D");
+			char rank3 ='D';
+		}
+		else
+			System.out.println("F");
+		System.out.println("당신의 과목합계는"+sum+"이고 당신의 평균은"+avg+"이고 등급은");
+	}
+	
+}

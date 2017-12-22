@@ -1,0 +1,22 @@
+package day04;
+
+import java.util.Scanner;
+
+public class q1 {
+	public static void main(String[] args) {
+
+		Scanner sc= new Scanner(System.in);
+		System.out.println("말을탄시간을입력하세요");
+		int a = sc.nextInt();
+		//1분당 60*30
+		if(a <= 3000) {
+			System.out.println("요금은"+a+"원입니다.");
+		}
+			
+	
+		
+		
+		
+			
+	}
+}

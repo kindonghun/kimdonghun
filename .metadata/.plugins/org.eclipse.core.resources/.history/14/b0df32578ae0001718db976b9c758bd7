@@ -1,0 +1,80 @@
+package day04;
+
+import java.util.Scanner;
+
+public class ex01 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("계산기 프로그램을 실행시키시겠습니까?");
+
+		System.out.println("1. Yes");
+
+		System.out.println("2. No");
+
+		int sel = sc.nextInt();
+		switch (sel) {
+
+		case 1:
+
+			System.out.println("***** 계산기 프로그램 *****");
+
+			System.out.println("두 정수를 입력해주세요");
+
+			// 입력은 따로 받아야합니다
+
+			int num1 = sc.nextInt();
+
+			int num2 = sc.nextInt();
+
+			System.out.println("연산자를 선택하여주세요");
+
+			// 연산자는 String으로 받고 가장 앞쪽 한글자만
+
+			char dns = sc.next().charAt(0);
+
+			// String dns = sc.next();
+
+			switch (dns) {
+
+			// jdk 1.7부터는 String도 switch의 매개변수로 가능
+
+			// case "+":
+
+			case '+':
+
+				System.out.println(num1 + "+" + num2 + "=" + (num1 + num2));
+
+				break;
+
+			case '-':
+
+				// 연산식은 괄호로 묶어주기
+
+				System.out.println(num1 + "-" + num2 + "=" + (num1 - num2));
+
+				break;
+
+			case '*':
+
+				System.out.println(num1 + "X" + num2 + "=" + (num1 * num2));
+
+				break;
+
+			case '/':
+
+				System.out.println(num1 + "/" + num2 + "=" + (num1 / num2));
+
+				break;
+
+			default:
+
+				return;
+
+			}
+
+		}
+
+	}
+
+}

@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class test3 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("****학생관리프로그램****");
+		System.out.println();
+		System.out.println("학생관리프로그램을시작하시겠습니까?");
+		System.out.println("1. YES");
+		System.out.println("2. NO");
+		
+		int a = sc.nextInt();
+		
+		switch(a) {
+		
+		case 1:
+			System.out.println("학생등록");
+			String name = sc.next();
+		case 2:
+			System.out.println("국어점수입력");
+			int kor = sc.nextInt();
+			System.out.println("수학점수입력");
+			int mat = sc.nextInt();
+			System.out.println("영어점수입력");
+			int eng = sc.nextInt();
+		case 3:
+			System.out.println("학생이름출력");
+			name = sc.nextLine();
+		}
+		
+		
+		
+	}
+}

@@ -1,0 +1,17 @@
+package day07;
+
+import java.util.Scanner;
+
+public class test1 {
+	public static void main(String[] args) {
+		int[] st = new int[4];
+		st[0]=80;
+		st[1]=100;
+		st[2]=80;
+		st[3]=84;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("국어점수:"+st[0]);
+		System.out.println("수학점수:"+st[1]);
+		
+	}
+}

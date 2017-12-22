@@ -1,0 +1,14 @@
+package day05;
+
+public class test2 {
+	public static void main(String[] args) {
+		int sum =0;
+
+		for(int i=0;i<10;i+=2) {
+			
+			//if(i%2==1) //È¦¼ö (i%2==0) Â¦¼ö
+				sum+=i ;
+		}
+		System.out.println("sum="+sum);
+	}
+}

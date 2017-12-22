@@ -1,0 +1,25 @@
+package day04;
+
+import java.util.Scanner;
+
+public class q1 {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("말을탄시간을입력하세요:");
+		int min = sc.nextInt() - 30;
+		int fare;
+		int ex;
+		if (min < 0) {
+			fare = 3000;
+		} else {
+			if (min % 10 == 0) {
+				ex = min / 10;
+			} else {
+				ex = (min / 10) + 1;
+				fare = 3000 + (ex * 500);
+			}
+			System.out.println("금액:" + fare + "원입니다");
+		}
+	}
+}

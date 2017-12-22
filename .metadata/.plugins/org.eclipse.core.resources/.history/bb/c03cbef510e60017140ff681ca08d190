@@ -1,0 +1,17 @@
+package day07;
+
+import java.util.Scanner;
+
+public class test2 {
+	public static void main(String[] args) {
+			Scanner sc = new Scanner(System.in);
+		String[] name = {"¿øºó","Çöºó","¹ÚÇöºó","±è¿ìºó","ÀüÇýºó"};
+		int[] age = new int[name.length];
+		
+		for(int i= 1; i<5; i++) {
+			System.out.println(i+"¹øÂ° Á¤º¸ÀÔ·Â");
+			int a = sc.nextInt();
+			
+		}
+	}
+}

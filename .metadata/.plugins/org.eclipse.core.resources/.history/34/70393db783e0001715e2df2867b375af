@@ -1,0 +1,30 @@
+package day04;
+
+import java.util.Scanner;
+
+public class tttt {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int basetime = 30; //기본이용시간
+		int baseuseprice = 3000; //기본이용요금
+		int addprice = 500; //분당
+		int addpermuiute = 10; //추가요금
+		int usetime = 0; //이용시간
+		int useprice = 0; //전체금액
+		
+		System.out.println("이용시간:");
+		 usetime= sc.nextInt();
+		 if(usetime <= basetime) { // 이용시간 <=기본이용시간
+			 useprice = baseuseprice; //전체금액 = 기본이용요금	 
+		 }else { //나머지
+			 int tmp=(usetime- basetime); // 새로운 tmp 변수생성	
+			 								//이용시간 - 기본이용시간 (tmp에 대입)
+			 tmp =tmp / addpermuiute; // tmp / 추가요금
+			 useprice = baseuseprice +(addprice*tmp); //전체금액 = 기본이용요금 +(10분당*tmp)
+		 }
+		 System.out.println("이용요금은:"+useprice+"원입니다");
+		
+	
+	}
+}

@@ -1,0 +1,22 @@
+package day05;
+
+
+
+
+import java.util.Scanner;
+
+public class test6 {
+	public static void main(String[] args)  {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("첫번째값:");
+		int a = sc.nextInt();
+		System.out.println("두번째값:");
+		int b = sc.nextInt();
+		
+		int sum_sc =0;
+		for(int i=(a+1); i<b; i++)
+			sum_sc += i;
+	
+		System.out.println("두수 사이의합은:"+sum_sc);
+	}
+}

@@ -1,0 +1,20 @@
+package day07;
+import java.util.Scanner;
+
+
+public class test1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+	
+		int[] st = {100,100,100,100};
+	
+		System.out.println("국어점수:");
+		int a = sc.nextInt();
+		System.out.println("수학점수:");
+		int b = sc.nextInt();
+		System.out.println("영어점수:");
+		int c =sc.nextInt();
+		
+		
+	}
+}

@@ -1,0 +1,17 @@
+package day03;
+
+import java.util.Scanner;
+
+public class test2 {
+	public static void main(String[] ages) {
+		
+		Scanner sc =new Scanner(System.in);
+		System.out.println("합격여부를 입력하세요:(1. 합격  2.불합격)");
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = (a > b)? a:b;
+		
+		System.out.println("합격입니다"+c);
+		System.out.println("불합격입니다"+c);
+	}
+}

@@ -1,0 +1,17 @@
+package day05;
+
+public class test5 {
+	public static void main(String[] args) {
+		
+		  int i,sum=0;
+
+		  for(i=1;i<=100;i++) {
+		   if(i%3==0 || i%5==0 ) {
+			   sum += i;
+		   }	
+		   
+		  }
+		  System.out.println("3의배수이거나5의배수 합 :"+sum);
+		  
+}
+}

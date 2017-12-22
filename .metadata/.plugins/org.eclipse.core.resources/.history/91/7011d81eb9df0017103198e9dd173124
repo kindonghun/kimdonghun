@@ -1,0 +1,27 @@
+package day03;
+
+public class ex03 {
+	public static void main(String[] args) {
+		
+		int a=5, b =6,c=10, d=0;
+		boolean bo = false;
+		
+		d =++a*b--; //a=6 b=5  d= 36
+		System.out.printf("a=%d,b=%d,d=%d\n",a,b,d);
+		
+		d= a++ + ++c - b--; //a=6 c=11 b=4  6+11-4 17-4 =13
+		System.out.printf("a=%d,b=%d,c=%d,d=%d\n",a,b,c,d);
+		
+		a=1;
+		b=0;
+		bo=a++>0||1<++b*d--/++c;
+		System.out.printf("a=%d,b=%d,c=%d,d=%d\n",a,b,c,d,bo);
+		bo=b++>0 && 1< ++a /++c*d++;
+		System.out.printf("a=%d,b=%d,c=%d,d=%d\n",a,b,c,d,bo);
+		
+		
+		int a1=5;
+		a++;
+		System.out.println(a1);
+	}
+}

@@ -1,0 +1,18 @@
+package day04;
+
+import java.util.Scanner;
+
+public class q4 {
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("첫번째과목점수:");
+		int a = sc.nextInt();
+		System.out.println("두번째과목점수:");
+		int b = sc.nextInt();
+		System.out.println("세번째과목점수:");
+		int c = sc.nextInt();
+		
+		System.out.println("성적합계:"+(a+b+c));
+		System.out.println("성적평균:"+(a+b+c)/(float)3.0f);
+	}
+}

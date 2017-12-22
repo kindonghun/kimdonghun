@@ -1,0 +1,57 @@
+package day06;
+
+import java.io.IOException;
+import java.util.*;
+
+public class test4 {
+
+	public static boolean add(int n1) {
+
+		
+		if (n1 % 2 == 0) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+
+	public static int aaa(int a, int b) {
+
+		int sum = 0, i = 0;
+
+		for (i = a; i <= b; i++)
+			if (i % 2 == 1)
+				sum += i;
+		return sum;
+	}
+
+	public static boolean bbb(char n1) {
+		
+
+		char data = 0;
+
+		if ((data >= 65 && data <= 90) || (data >= 97 && data <= 122)) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+
+	public static void main(String[] args) {
+		
+		if(bbb('a')) {
+			System.out.println("대문자입니다.");
+		}else
+			System.out.println("소문자입니다.");
+		
+		System.out.println(bbb('A'));
+		
+		if(add(5)) {
+			System.out.println("홀수입니다");
+		}else
+			System.out.println("짝수입니다");
+
+		
+	}
+
+}

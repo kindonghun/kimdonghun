@@ -1,0 +1,13 @@
+package day03;
+
+import java.util.*;
+
+public class ex01 {
+
+	public static void main(String[] args) {
+			Scanner sc = new Scanner(System.in); //객체생성
+			
+			sc.nextLine(); // "\r\n" 개행문자까지 읽어서 String으로 변환
+			
+	}
+}

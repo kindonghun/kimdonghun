@@ -1,0 +1,21 @@
+package day04;
+
+import java.util.Scanner;
+
+public class q1 {
+	public static void main(String[] args) {
+
+		Scanner sc= new Scanner(System.in);
+		System.out.println("말을탄시간을입력하세요");
+		int a = sc.nextInt();
+		//1분당 60*30
+		int num1=30/3000;
+		if(a ==30) {
+			System.out.println("말을탄시간"+a);
+		}
+		System.out.println("계산:"+num1);
+		
+		
+			
+	}
+}

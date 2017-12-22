@@ -1,0 +1,20 @@
+package day04;
+
+import java.util.Scanner;
+
+public class ex01 {
+	public static void main(String[] args) {
+			Scanner sc= new Scanner(System.in);
+			//정수 두개 를 입력받아 사칙연산을 하는 계산기 만들기.
+			int a = sc.nextInt();
+			char b = '+';
+			char c = '-';
+			char d = '*';
+			char e = '/';
+			switch(a) {
+			
+			case 0:
+				System.out.println("연산자입력:"+a+b+c+d); break;
+			}
+	}
+}

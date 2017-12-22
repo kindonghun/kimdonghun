@@ -1,0 +1,15 @@
+package day03;
+
+import java.util.Scanner;
+
+public class ex02 {
+	
+		public static void main(String[] ages) {
+			
+			Scanner sc = new Scanner(System.in);
+			
+			double tmp1 = 3.14;
+			System.out.println(tmp1);
+			
+		}
+}

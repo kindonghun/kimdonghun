@@ -1,0 +1,23 @@
+package day03;
+
+import java.util.*;
+
+public class ex01 {
+
+	public static void main(String[] args) {
+			Scanner sc = new Scanner(System.in); //객체생성
+			//문자열을 입력받는 밥법
+			String str =sc.nextLine(); // "\r\n" 개행문자까지 읽어서 String으로 변환
+			
+			System.out.println(str);
+			
+			//정수를 입력받는방법 1.
+			int n1 = sc.nextInt();
+			System.out.println(n1);
+			//정수를 입력받는방법 2.
+			
+			//실수를 입력받는방법 1.
+			
+			//실수를 입력받는방법 2.
+	}
+}

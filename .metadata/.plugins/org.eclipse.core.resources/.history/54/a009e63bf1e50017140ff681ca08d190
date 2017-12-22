@@ -1,0 +1,14 @@
+package day07;
+
+public class test1 {
+	public static void main(String[] args) {
+		int[] st = new int[4];
+		st[0]=80;
+		st[1]=98;
+		st[2]=80;
+		st[3]=84;
+		
+		System.out.println(st[0]);
+		
+	}
+}

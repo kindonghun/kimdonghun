@@ -1,0 +1,23 @@
+package day04;
+
+import java.util.Scanner;
+
+public class q3 {
+	public static void main(String[] args) {
+		Scanner	sc =new Scanner(System.in);
+		
+		int price =5000;
+		int num;
+		
+		System.out.println("구입할비스켓 갯수를 입력하세요:");
+		int a = sc.nextInt();
+		
+		if(a >=100) {
+			System.out.println("가격은 12%할인받은"+(int)(price+a)*0.88+"원입니다");
+		}
+		else if (a >=10){
+			System.out.println("가격은 10%할인받은"+(int)(price+a)*0.9+"원입니다");
+		}
+		
+	}
+}

@@ -1,0 +1,13 @@
+package day07;
+
+import java.util.Random;
+
+public class test3 {
+public static void main(String[] args) {
+	Random ran = new Random();
+	for(int i=0; i<5;i++) {
+		int n =ran.nextInt(100);
+		System.out.println(n);
+	}
+}
+}

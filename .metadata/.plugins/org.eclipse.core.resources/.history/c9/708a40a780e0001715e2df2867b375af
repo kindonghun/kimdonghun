@@ -1,0 +1,25 @@
+package day04;
+
+import java.util.Scanner;
+
+public class tttt {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("말을 탄 시간을 입력하시오 : ");
+		int time = sc.nextInt() - 30; // 이용시간
+		int exch; // 추가요금
+		int result_ho;
+
+		if (time < 0)
+			result_ho = 3000;
+		else {
+			if (time % 10 == 0)
+				exch = time / 10;
+			else
+				exch = (time / 10)+1;
+			result_ho = 3000 + (exch * 500);
+		}
+		System.out.println("당신이 지불해야할 승마료는 " + result_ho + "원 입니다.");
+	}
+}

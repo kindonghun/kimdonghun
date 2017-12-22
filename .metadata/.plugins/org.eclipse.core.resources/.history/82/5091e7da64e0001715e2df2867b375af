@@ -1,0 +1,27 @@
+package day03;
+
+import java.util.Scanner;
+
+public class test8 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+			Scanner sc = new Scanner(System.in);
+			
+			System.out.println("두수를 입력 받아 큰수가 짝수이면 출력하세요");
+			int a = sc.nextInt();
+			int b = sc.nextInt();
+			
+			if(a%2>0) {
+				System.out.println("짝수입니다");
+			}
+			else if(b%2>0){
+				System.out.println("짝수입니다");
+			}
+			else
+				System.out.println("짝수가아닙니다.");
+				
+	}
+
+}
